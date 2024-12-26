@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "lunch-survey"
+version = "0.1.0"
+description = "Lunch survey webhook for smartmind team!"
+authors = ["KyungHo Kim <hao@smartmind.team>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+emoji-logger = "^0.1.12"
+requests = "^2.32.3"
+pydantic = "^2.10.4"
+pydantic-settings = "^2.7.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

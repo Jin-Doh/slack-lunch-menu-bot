@@ -1,0 +1,10 @@
+docker/
+.env
+.pytest_cache/
+.DS_Store
+.venv/
+.gitignore
+.git/
+.vscode/
+**/.DS_Store
+**/__pycache__/

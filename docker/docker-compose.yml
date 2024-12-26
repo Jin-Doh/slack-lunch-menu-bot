@@ -1,0 +1,12 @@
+name: lunch-survey
+
+services:
+  lunch-survey:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    restart: always
+    env_file:
+      - .env
+    command: poetry run python main.py
+    # command: sleep infinity
