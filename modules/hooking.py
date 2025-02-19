@@ -7,7 +7,7 @@ class SlackHooking:
     def __init__(self):
         self.client = requests.Session()
         self.infos = self.prepare_infos()
-        self.hansot_menu = "https://thesmartmind.slack.com/files/U03KDQN5JJ0/F086KKU2UR2/_______________________________2024-12-26_11.38.27.png"
+        self.hansot_menu = "https://www.hsd.co.kr/menu/menu_list"
 
     def prepare_infos(self) -> dict:
         url = settings.slack_webhook_url
@@ -31,6 +31,7 @@ class SlackHooking:
         payload = self.infos["payload"]
         text = f"<#C07TWKY2LSE> 점심시간 조사 시작합니다."
         text += f"\n11시 30분까지 스레드 작성해주세요~"
+        text += f"\n{self.hansot_menu}"
         payload["text"] = text
 
         res = self.client.post(url, json=payload)

@@ -3,7 +3,8 @@ name = "lunch-survey"
 version = "0.1.0"
 description = "Lunch survey webhook for smartmind team!"
 authors = ["KyungHo Kim <hao@smartmind.team>"]
-readme = "README.md"
+package-mode = false
+# readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
